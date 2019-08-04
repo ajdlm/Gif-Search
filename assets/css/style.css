@@ -10,6 +10,7 @@ body {
 }
 
 h1 {
+    font-size: 2.5rem;
     font-family: ethnocentric, serif;
     font-weight: 100;
     color: white;
@@ -18,7 +19,17 @@ h1 {
     border-bottom: .2vh solid white;
     background: rgba(184, 183, 183, 0.3);
     padding: 1vw;
-    margin-top: .5vw;
+    margin: .5vw 0;
+    line-height: 1.2;
+}
+
+p, button, #add-movie {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+button {
+    cursor: pointer;
 }
 
 #movie-search {
@@ -34,6 +45,11 @@ h1 {
 #add-movie {
     margin: .5vw;
     font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+#submit-movie {
+    font-family: ethnocentric, serif;
 }
 
 #image-area {
