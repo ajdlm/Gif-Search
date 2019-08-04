@@ -1,0 +1,10 @@
+body {
+    background-image: url("../images/starscape.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
