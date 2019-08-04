@@ -45,7 +45,7 @@ $(document).ready(function () {
                     
                     var nextImage = $("<img>");
 
-                    nextImage.attr("src", results[j].images.fixed_height_still.url);
+                    nextImage.attr("src", results[j].images.fixed_height_still.url).attr("data-still", results[j].images.fixed_height_still.url).attr("data-moving", results[j].images.fixed_height.url).attr("data-state", "still").addClass("movie-gif").css("cursor", "pointer");
 
                     var nextRating = results[j].rating;
 
@@ -56,5 +56,17 @@ $(document).ready(function () {
                     $("#image-area").prepend(gifDiv);
                 };
             });
+    });
+
+    $("#image-area").on("click", ".movie-gif", function (event) {
+        var currentState = $(this).attr("data-state");
+
+        if (currentState === "still") {
+            $(this).attr("src", $(this).attr("data-moving")).attr("data-state", "moving");
+        }
+
+        else if (currentState === "moving") {
+            $(this).attr("src", $(this).attr("data-still")).attr("data-state", "still");
+        };
     });
 });
