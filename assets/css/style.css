@@ -1,10 +1,39 @@
+@font-face {
+    font-family: "ethnocentric";
+    src: url("../fonts/ethnocentric\ rg.ttf") format("truetype");
+}
+
+/*url("../fonts/chunkfive.print-webfont.woff2") format("woff2"),
+         url("../fonts/chunkfive.print-webfont.woff") format("woff"),*/
+
 body {
-    background-image: url("../images/starscape.jpg");
+    background-image: url("../images/nebula-background.jpg");
     background-size: cover;
     text-align: center;
 }
 
 h1 {
+    font-family: ethnocentric, serif;
+    font-weight: 100;
     color: white;
     text-align: center;
+    border-top: .2vh solid white;
+    border-bottom: .2vh solid white;
+    background: rgba(184, 183, 183, 0.3);
+    padding: 1vw;
+    margin-top: .5vw;
+}
+
+#movie-search {
+    color: white;
+    background: rgba(184, 183, 183, 0.3);
+    border-top: .2vh solid white;
+    border-bottom: .2vh solid white;
+    margin-top: .5vw;
+    font-family: ethnocentric, serif;
+}
+
+#add-movie {
+    margin: .5vw;
+    font-family: 'Times New Roman', Times, serif;
 }
