@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     createButtons();
 
-    $("#submit-movie").on("click", function(event) {
+    $("#submit-movie").on("click", function (event) {
         newMovie = $("#add-movie").val().trim();
 
         topics.push(newMovie);
@@ -22,9 +22,39 @@ $(document).ready(function () {
         createButtons();
     });
 
-    $("#buttons-here").on("click", ".movie-button", function(event) {
-        alert("Wow, you click button of " + $(this).attr("data-name") + "!");
+    $("#buttons-here").on("click", ".movie-button", function (event) {
+        var movieName = $(this).attr("data-name");
 
-        
+        movieName = movieName.replace(/ /g, "+");
+
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movieName + "&api_key=IiDTkAfuzEbi8l4ceRkr2Zg8bdqcnUm4&limit=10";
+
+        $("#image-area").empty();
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
+            .then(function (response) {
+                var results = response.data;
+
+                console.log(results);
+
+                for (var j = 0; j < results.length; j++) {
+                    var gifDiv = $("<div>");
+                    
+                    var nextImage = $("<img>");
+
+                    nextImage.attr("src", results[j].images.fixed_height_still.url);
+
+                    var nextRating = results[j].rating;
+
+                    var nextP = $("<p>").text("Rating: " + nextRating.toUpperCase()).css("font-family", "ethnocentric, serif").css("color", "white").css("margin", "10px");
+
+                    gifDiv.append(nextImage, nextP).css("margin", "2vw").css("display", "inline-block").css("background", "rgba(184, 183, 183, 0.3)").css("border", ".2vh solid white");
+
+                    $("#image-area").prepend(gifDiv);
+                };
+            });
     });
 });
