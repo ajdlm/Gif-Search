@@ -3,9 +3,6 @@
     src: url("../fonts/ethnocentric\ rg.ttf") format("truetype");
 }
 
-/*url("../fonts/chunkfive.print-webfont.woff2") format("woff2"),
-         url("../fonts/chunkfive.print-webfont.woff") format("woff"),*/
-
 body {
     background-image: url("../images/nebula-background.jpg");
     background-size: cover;
@@ -30,10 +27,15 @@ h1 {
     border-top: .2vh solid white;
     border-bottom: .2vh solid white;
     margin-top: .5vw;
+    margin-bottom: 1.5vw;
     font-family: ethnocentric, serif;
 }
 
 #add-movie {
     margin: .5vw;
     font-family: 'Times New Roman', Times, serif;
+}
+
+#image-area {
+    margin-bottom: 1.5vw;
 }

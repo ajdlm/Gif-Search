@@ -51,7 +51,7 @@ $(document).ready(function () {
 
                     var nextP = $("<p>").text("Rating: " + nextRating.toUpperCase()).css("font-family", "ethnocentric, serif").css("color", "white").css("margin", "10px");
 
-                    gifDiv.append(nextImage, nextP).css("margin", "2vw").css("display", "inline-block").css("background", "rgba(184, 183, 183, 0.3)").css("border", ".2vh solid white");
+                    gifDiv.append(nextImage, nextP).css("margin", "1.5vw 2vw").css("display", "inline-block").css("background", "rgba(184, 183, 183, 0.3)").css("border", ".2vh solid white");
 
                     $("#image-area").prepend(gifDiv);
                 };
