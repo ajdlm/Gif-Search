@@ -39,19 +39,52 @@ button {
     border-bottom: 1px solid white;
     margin-top: 7.5px;
     margin-bottom: 22.5px;
+    padding-top: 7.5px;
     font-family: ethnocentric, serif;
 }
 
 #add-movie {
-    margin: 7.5px;
+    margin: 0 7.5px 7.5px;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
 }
 
 #submit-movie {
     font-family: ethnocentric, serif;
+    background: #FFFFFF;
+    margin-bottom: 7.5px;
 }
 
 #image-area {
     margin-bottom: 22.5px;
+}
+
+@media screen and (min-width: 641px) {
+    .mobile-break {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    #add-movie {
+        margin-top: 7.5px;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    img {
+        max-width: 250px;
+    }
 }
