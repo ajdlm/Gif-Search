@@ -10,7 +10,7 @@ A page that uses the Giphy API to find and display gifs related to different sci
 
 * These gifs will then be displayed on the page.
 
-* By default, they will be still, but clicking on one will cause it to animate. Clicking on it again will make it static once more.
+* By default, they will be still, but clicking will cause them to animate. Clicking again will make them static once more.
 
 * Each time that the user clicks on one of the buttons, whichever gifs were displayed previously will disappear before being replaced by the new ones.
 
