@@ -13,13 +13,23 @@ $(document).ready(function () {
     createButtons();
 
     $("#submit-movie").on("click", function (event) {
+        event.preventDefault();
+
         newMovie = $("#add-movie").val().trim();
 
-        topics.push(newMovie);
+        if (newMovie.length > 0) {
+            topics.push(newMovie);
 
-        $("#buttons-here").empty();
+            $("#buttons-here").empty();
 
-        createButtons();
+            createButtons();
+        };
+    });
+
+    $("#add-movie").keyup(function (event) {
+        if (event.keyCode === 13) {
+            $("#submit-movie").click();
+        };
     });
 
     $("#buttons-here").on("click", ".movie-button", function (event) {
@@ -42,7 +52,7 @@ $(document).ready(function () {
 
                 for (var j = 0; j < results.length; j++) {
                     var gifDiv = $("<div>");
-                    
+
                     var nextImage = $("<img>");
 
                     nextImage.attr("src", results[j].images.fixed_height_still.url).attr("data-still", results[j].images.fixed_height_still.url).attr("data-moving", results[j].images.fixed_height.url).attr("data-state", "still").addClass("movie-gif").css("cursor", "pointer");
