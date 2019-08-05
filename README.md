@@ -10,6 +10,8 @@ A page that uses the Giphy API to find and display gifs related to different sci
 
 * These gifs will then be displayed on the page.
 
+* By default, they will be still, but clicking on one will cause it to animate. Clicking on it again will make it static once more.
+
 * Each time that the user clicks on one of the buttons, whichever gifs were displayed previously will disappear before being replaced by the new ones.
 
 * The user can also add additional buttons to the list by entering the text of the button they want into the input field next to ADD A FILM and either pressing enter or clicking on the SUBMIT button.
