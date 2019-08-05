@@ -15,11 +15,11 @@ h1 {
     font-weight: 100;
     color: white;
     text-align: center;
-    border-top: .2vh solid white;
-    border-bottom: .2vh solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     background: rgba(184, 183, 183, 0.3);
-    padding: 1vw;
-    margin: .5vw 0;
+    padding: 15px;
+    margin: 7.5px 0;
     line-height: 1.2;
 }
 
@@ -35,15 +35,15 @@ button {
 #movie-search {
     color: white;
     background: rgba(184, 183, 183, 0.3);
-    border-top: .2vh solid white;
-    border-bottom: .2vh solid white;
-    margin-top: .5vw;
-    margin-bottom: 1.5vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: 7.5px;
+    margin-bottom: 22.5px;
     font-family: ethnocentric, serif;
 }
 
 #add-movie {
-    margin: .5vw;
+    margin: 7.5px;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
 }
@@ -53,5 +53,5 @@ button {
 }
 
 #image-area {
-    margin-bottom: 1.5vw;
+    margin-bottom: 22.5px;
 }

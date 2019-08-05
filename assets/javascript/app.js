@@ -4,7 +4,7 @@ $(document).ready(function () {
     function createButtons() {
         for (var i = 0; i < topics.length; i++) {
             var newButton = $("<button>");
-            newButton.text(topics[i]).addClass("movie-button").attr("data-name", topics[i]).css("background", "rgba(184, 183, 183, 0.3)").css("color", "white").css("border", "solid .2vh").css("margin", ".5vw").css("border-radius", "10px");
+            newButton.text(topics[i]).addClass("movie-button").attr("data-name", topics[i]).css("background", "rgba(184, 183, 183, 0.3)").css("color", "white").css("border", "solid 1px").css("margin", "7.5px").css("border-radius", "10px");
 
             $("#buttons-here").append(newButton);
         };
@@ -61,7 +61,7 @@ $(document).ready(function () {
 
                     var nextP = $("<p>").text("Rating: " + nextRating.toUpperCase()).css("font-family", "ethnocentric, serif").css("color", "white").css("margin", "10px");
 
-                    gifDiv.append(nextImage, nextP).css("margin", "1.5vw 2vw").css("display", "inline-block").css("background", "rgba(184, 183, 183, 0.3)").css("border", ".2vh solid white");
+                    gifDiv.append(nextImage, nextP).css("margin", "22.5px 30px").css("display", "inline-block").css("background", "rgba(184, 183, 183, 0.3)").css("border", "1px solid white");
 
                     $("#image-area").prepend(gifDiv);
                 };
