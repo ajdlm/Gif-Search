@@ -2,6 +2,8 @@
 
 A page that uses the Giphy API to find and display gifs related to different science fiction movies.
 
+Deployed application at https://ajdlm.github.io/sci-fi-movie-gifs/.
+
 ## How to Use
 
 * When the page loads, 20 different buttons will be displayed, each with the name of a different science fiction movie.
